@@ -1,0 +1,35 @@
+
+<div *ngIf="browser" id="addBtn" class="addDiv">
+    <span>Would you like to add {{title}} to Home Screen ? </span>
+    <button  (click)="addToHomeScreen()">Add </button>
+    <button (click)="remove()">Close</button>
+</div>
+<div>
+    <table>
+        <thead>
+            <th>
+                ID
+            </th>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Email ID
+            </th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of datas">
+                <td>{{data.id}}</td>
+                <td>{{data.first_name}}</td>
+                <td>{{data.last_name}}</td>
+                <td>{{data.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button style="align-self: right;" (click)="loadMore()">Load More</button>
+    </div>
+</div>

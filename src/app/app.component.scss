@@ -1,0 +1,25 @@
+.addDiv{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ddd;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+table{
+    width: 100%;
+    th{
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    td{
+        border: 1px solid #ddd;
+    }
+}
